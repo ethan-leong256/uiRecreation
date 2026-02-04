@@ -64,6 +64,33 @@ fun uiRecreation(modifier: Modifier = Modifier) {
     Column(
         verticalArrangement = Arrangement.SpaceAround,
         modifier = modifier.fillMaxSize() ) {
+        Row(modifier = modifier){
+            Spacer(modifier = Modifier.weight(1f))
+            Image(
+                painter = painterResource(id = R.drawable.mirror_device),
+                contentDescription = "User Profile",
+                modifier = Modifier
+                    .size(40.dp)
+            )
+            Image(
+                painter = painterResource(id = R.drawable.bell),
+                contentDescription = "User Profile",
+                modifier = Modifier
+                    .size(40.dp)
+            )
+            Image(
+                painter = painterResource(id = R.drawable.glass),
+                contentDescription = "User Profile",
+                modifier = Modifier
+                    .size(40.dp)
+            )
+            Image(
+                painter = painterResource(id = R.drawable.cog),
+                contentDescription = "User Profile",
+                modifier = Modifier
+                    .size(40.dp)
+            )
+        }
         Row(horizontalArrangement = Arrangement.Start) {
             Image(
                 painter = painterResource(id = R.drawable.user_profile),
@@ -125,7 +152,7 @@ fun uiRecreation(modifier: Modifier = Modifier) {
                     .size(125.dp)
             )
         }
-
+        Spacer(modifier = Modifier.weight(1f))
         Row(){
             Column() {
                 Row() {
@@ -148,6 +175,17 @@ fun uiRecreation(modifier: Modifier = Modifier) {
                 }
             }
         }
+        Spacer(modifier = Modifier.weight(1f))
+        Row() {
+            Text("__________________________________________________")
+        }
+        Row(){
+            Column() {
+                Text("Try YouTube Premium for $0", fontSize = 15.sp)
+                Text("Restrictitons apply. Cancel Anytime", fontSize = 10.sp)
+            }
+        }
+
         Spacer(modifier = Modifier.weight(1f))
         Row(horizontalArrangement = Arrangement.Center,
             modifier = Modifier.fillMaxWidth(fraction = 1f)){
